@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<title>WikiAnt</title>
+			<link rel="stylesheet" type="text/css" href="css\main.css">
+            <link rel="stylesheet" type="text/css" href="css\styleNourriture.css">
+            <link rel="stylesheet" type="text/css" href="css\formulaires.css">
+            <link rel="icon" type="image/png" href="img/45px-Ant_(Jacob_Eckert).svg.png">
+	</head>
+
+<!--Bonjour, je suis un commentaire-->
+    J'aime le veau
+    prout prout
+
+	<body>
+		<header>
+            <img class="imgAccueil" src="img/logo-fourmi-2811.png">
+			<h1>WikiAnt</h1>
+            <img class="imgBanniere" src="img/Fourmi_Fotolia_15167576_L.png"/>
+		</header>
+		<nav>
+			<ul>
+                <li class="itemMenu">
+                        <a class="textMenu" href="index.html">
+                        Accueil
+                        </a>
+                    </li>
+				    <li class="itemMenu">
+                        <a class="textMenu" href="especes.html">
+                            Espèces
+                        </a>
+                    </li>
+				
+                 
+				    <li class="itemMenu">
+                        <a class="textMenu" href="nourriture.html">
+                        Nourritures
+                        </a>
+                    </li>
+                
+                
+				    <li class="itemMenu">
+                        <a class="textMenu" href="fourmilieres.html">
+                        Fourmilières
+                        </a>
+                    </li>
+			</ul>
+		</nav>
+        
+		<div class="enDessousDuHeader">
+			<section>
+                <h1>Nourritures existantes</h1>
+                <table class="tabNourritures">
+					<thead>
+						<tr>
+							<th>Identifiant</th>
+							<th>Photo</th>
+							<th>Nom nourriture</th>
+                            <th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td><img src="img/cafard-mort.jpg"/></td>
+							<td>Insectes morts</td>
+							<td>
+                                <form action="modifNourriture.html">
+                                    <input type="submit" value="Modifier"/>
+                                </form>
+                                <form action="nourriture.html">
+                                    <input type="submit" value="Supprimer"/>
+                                </form>
+                            </td>
+						</tr>
+                        <tr>
+							<td>2</td>
+							<td><img src="img/Lait.jpg"/></td>
+							<td>Lait</td>
+							<td>
+                                <form action="modifNourriture.html">
+                                    <input type="submit" value="Modifier"/>
+                                </form>
+                                <form action="nourriture.html">
+                                    <input type="submit" value="Supprimer"/>
+                                </form>
+                            </td>
+						</tr>
+                        <tr>
+							<td>3</td>
+							<td><img src="img/1340298376-miel-413x293-jpg.jpg.png"/></td>
+							<td>Miel (sans pesticides)</td>
+							<td
+                                <form action="modifNourriture.html">
+                                    <input type="submit" value="Modifier"/>
+                                </form>
+                                <form action="nourriture.html">
+                                    <input type="submit" value="Supprimer"/>
+                                </form>
+                            </td>
+						</tr>
+					</tbody>
+				</table>
+            </section>
+
+
+            <aside>
+                <section>
+                    <h4>Vous cherchez un certaine nourriture?</h4>
+                    <form class="recherche" action="nourriture.html">
+                        <input type="search" name="motRecherche" id="motRecherche"/>
+                        <input type="submit" value=" Rechercher ">
+                        </form>
+                </section>
+                <section>
+                    <h4>Vous voulez ajouter une nouvelle nourriture?</h4>
+                    <form class="ajoutNourriture" action="nourriture.html">
+                        <div>
+                            <label for="nomNourriture">Nom</label>
+                            <input type="text" name="nomNourriture" id="nomNourriture"/>
+                        </div>
+                        <div>
+                            <label for="photoAjoutImage">Photo</label>
+                            <!--Ce input peut créé un scroll horizontal sur toute la page-->
+                            <input type="file" name="photoAjoutImage" value=" Ajouter ">
+                        </div>
+                        <input type="submit" name="nom" value=" Ajouter ">
+                    </form>
+                </section>
+            </aside>
+		</div>
+
+		<footer>
+		</footer>
+
+
+	</body>
+
+
+</html>
